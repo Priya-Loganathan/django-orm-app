@@ -19,21 +19,26 @@ Type the appropriate code for your table and provide appropriate datatypes to th
 Create a report about project in readme.md file and upload the django-orm-app folder to your remote repository.
 
 # PROGRAM
-from django.db import models
-from django.contrib import admin
-#Create your models here.
+```
+from django.db 
+import models
+from django.contrib 
+import admin
+
+#Create your models here
+
 class Student (models.Model):
     name=models.CharField(max_length=100)
     age=models.IntegerField()
     email=models.EmailField()
     referencenumber=models.CharField(max_length=20,help_text="reference number")
+    
 class StudentAdmin(admin.ModelAdmin):
     list_display=('name','age','email','referencenumber')
+ ```
+ 
 # OUTPUT
-
 ![clientoutput](https://user-images.githubusercontent.com/121166075/230700634-572d083a-4b45-40c9-a316-e7dbbc22b765.png)
-
-
 
 ## RESULT
 thus,the project is developed to have Student Information Database.
